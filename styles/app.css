@@ -56,3 +56,78 @@ body {
   background-color: var(--color-base);
   color: var(--color-text);
 }
+
+/* General Elements */
+
+/* Unordered list */
+ul {
+  list-style: none;
+}
+
+/* Links */
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Index page */
+
+/* index page container */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.heading-primary,
+.heading-secondary,
+.recipe__list-link {
+  text-transform: uppercase;
+}
+
+.heading-primary {
+  font-size: 4rem;
+
+  letter-spacing: 0.3rem;
+  margin: 1.7rem 0;
+}
+
+.heading-secondary {
+  margin: 0.5rem 0;
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+.recipe__list {
+}
+.recipe__list-item {
+  display: inline;
+  margin-right: 3rem;
+  color: var(--color-surface);
+}
+.recipe__list-link {
+  display: inline-block;
+  font-weight: 900;
+  background-color: var(--color-accent);
+  color: inherit;
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.3rem;
+
+  /* Animation */
+  transition: all 0.2s;
+}
+
+.recipe__list-link:hover {
+  transform: translateY(-0.5rem) scale(1.1);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+}
+
+.recipe__list-link:active {
+  transform: translateY(-0.3rem) scale(0.95);
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.35);
+  color: var(--color-accent-light);
+}

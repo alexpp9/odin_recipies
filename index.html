@@ -3,19 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Styles -->
     <link rel="stylesheet" href="styles/app.css" />
+
     <title>TOP &mdash; recipies</title>
   </head>
   <body>
-    <h1>The odin recipies website</h1>
-    <h2>Click on the desired recipy and see details</h2>
-    <ul>
-      <li><a href="./recipies/chickenSoup.html">Chicken soup recipy</a></li>
-      <li><a href="./recipies/lasagna.html">Lasagna recipy</a></li>
-      <li><a href="./recipies/pizza.html">Pizza recipy</a></li>
-      <li><a href="./recipies/sarmale.html">Sarmale recipy</a></li>
-    </ul>
+    <div class="container">
+      <h1 class="heading-primary">The odin recipies website</h1>
+      <h2 class="heading-secondary">
+        Click on the desired recipy and see details
+      </h2>
+      <ul class="recipe__list">
+        <li class="recipe__list-item">
+          <a class="recipe__list-link" href="./recipies/chickenSoup.html"
+            >Chicken soup recipy</a
+          >
+        </li>
+        <li class="recipe__list-item">
+          <a class="recipe__list-link" href="./recipies/lasagna.html"
+            >Lasagna recipy</a
+          >
+        </li>
+        <li class="recipe__list-item">
+          <a class="recipe__list-link" href="./recipies/pizza.html"
+            >Pizza recipy</a
+          >
+        </li>
+        <li class="recipe__list-item">
+          <a class="recipe__list-link" href="./recipies/sarmale.html"
+            >Sarmale recipy</a
+          >
+        </li>
+      </ul>
+    </div>
 
     <!-- Scrips -->
     <script src="scrips/app.js"></script>
