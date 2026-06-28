@@ -1,5 +1,38 @@
 /* Variables */
+:root {
+  /* Backgrounds */
+  --color-base: #fbf7f2;
+  --color-surface: #ffffff;
+  --color-surface-alt: #f5ede4;
 
+  /* Brand */
+  --color-primary: #c85a2b;
+  --color-primary-light: #fceee7;
+  --color-primary-dark: #8b3d1b;
+
+  /* Secondary + Accent */
+  --color-secondary: #6b8f71;
+  --color-secondary-light: #e8f0e9;
+  --color-accent: #d4943a;
+  --color-accent-light: #fdf3e0;
+
+  /* Text */
+  --color-text: #2d2016;
+  --color-text-secondary: #6b5d52;
+  --color-text-muted: #a89b90;
+
+  /* Borders */
+  --color-border: #e6ded5;
+
+  /* Semantic */
+  --color-success: #4a8c5c;
+  --color-error: #c43e3e;
+  --color-warning: #d4943a;
+
+  /* Fonts */
+  --font-heading: 'DM Serif Display', Georgia, serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+}
 /* Global */
 *,
 *::before,
@@ -15,6 +48,11 @@ html {
 }
 /* Body */
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
+  font-size: 1.5rem;
   line-height: 1.6;
+
+  /* Colours */
+  background-color: var(--color-base);
+  color: var(--color-text);
 }
