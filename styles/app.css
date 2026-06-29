@@ -57,6 +57,10 @@ body {
   color: var(--color-text);
 }
 
+.text-center {
+  text-align: center;
+}
+
 /* General Elements */
 
 /* Unordered list */
@@ -85,6 +89,7 @@ a:active {
 
 .heading-primary,
 .heading-secondary,
+.heading-tertiary,
 .recipe__list-link {
   text-transform: uppercase;
 }
@@ -130,4 +135,47 @@ a:active {
   transform: translateY(-0.3rem) scale(0.95);
   box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.35);
   color: var(--color-accent-light);
+}
+
+/* Recipe pages */
+.image-container {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.recipe__image {
+  width: 50%;
+  height: auto;
+
+  background-color: var(--color-primary-light);
+  border: 0.5rem solid var(--color-accent);
+  border-radius: 0.5rem;
+  padding: 0.7rem;
+}
+
+/* list */
+.recipe__list-page {
+}
+
+.recipe__list-ingredient {
+  text-transform: uppercase;
+  margin: 0.5rem 0;
+  padding: 0.5rem 2rem;
+  font-weight: 900;
+  color: var(--color-accent-light);
+  border-bottom: var(--color-primary) 0.3rem solid;
+  background-color: var(--color-secondary);
+}
+
+/* back */
+.back__button-container {
+  text-align: right;
+  color: var(--color-primary-light);
+}
+
+.back__button {
+  padding: 0.5rem 0.7rem;
+  text-transform: uppercase;
+  background-color: var(--color-accent);
+  color: inherit;
 }
